@@ -1,0 +1,114 @@
+@media (max-width:1199px) {
+    .hero (
+        height:auto
+    )
+        
+    .hero__content{
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .hero__desc {
+        margin:0 auto;
+        margin-bottom:100px;
+    }
+
+    .hero__btn-wrap{ 
+        width: 100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .hero__img-wrap{
+        max-width: 569px;
+       
+    }
+
+    .hero__img{
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+    /* Ширина контейнера по макету 708px + 40px padding, который мы задавали ранее */
+    max-width: 748px;
+    }
+/* Блок в котором находятся картинка и олписание (секция about)  */
+    .about__content {
+        /* Меняем направление главной оси (теперь главная ось направлена снизу вверх) */
+        flex-direction:  column-reverse;
+        align-items: center;
+    }
+
+    .slider__list{
+        gap: 30 40px;
+    }
+}
+
+@media (max-width:767px) {
+.nav{
+    display: none;
+}
+    
+.nav.active{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    background: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__list{
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.nav__link{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-size: 32px;
+color: #cdcdcd;
+}
+
+}
+
+
+@media (max-width:475px) {
+    .container {
+        max-width: 310px;
+        padding: 0 5px;
+    }
+
+    .friends__slider{
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      
+      .slider__list{
+      
+       }
+      
+      .slider__item{
+       
+      }
+      
+      .slider__controls{
+        position:static;
+        display: flex;
+        justify-content: space-between;
+       }
+      
+      .slider__control{
+        position: static;
+        display: block;
+        transform:translate(0) ;
+      }
+}

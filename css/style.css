@@ -1,0 +1,419 @@
+:root {
+  --color-light-xl: #fff;
+  --color-light-l: #f6f6f6;
+  --color-light-s: #fafafa;
+  --color-dark-s: #cdcdcd;
+  --color-dark-m: #b2b2b2;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4c4c4c;
+  --color-dark-2xl: #444;
+  --color-dark-3xl: #292929;
+  --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
+  --start-screen-gradient-background: #211f20;
+  --footer-gradient-background: #211f20;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+ 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  --font-family: "Georgia", sans-serif;
+  overflow: hidden;
+
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  overflow: hidden;
+  height: 100vh;
+  background: url(../img/bg/noise_transparent.png), url(../img/start-screen-gradient-background.png);
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 80px;
+}
+
+.logo {
+  display: block;
+}
+
+.logo__title{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.logo__subtitle{
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--color-light-xl);
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 35px;
+}
+
+.nav__item {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 6px;
+  transition: all 0.3s;
+}
+
+.nav__item:hover {
+  border-color: var(--color-primary);
+}
+
+.nav__link {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-light-s);
+  white-space: nowrap;
+}
+
+.burger{
+  width: 30px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.burger.active{
+  transform: rotate(270deg);
+}
+
+.burger__el,
+.burger__el::before,
+.burger__el::after  {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f1cdb3;
+}
+
+
+.burger__el::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.burger__el::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.hero__desc {
+  /* Делаем блок flex котейнером*/
+  display: flex;
+  /* Меняем направление главной оси (теперь главная ось - вертикальная) */
+  flex-direction: column;
+  /* Выравниваем по центру по главной оси (в нашем случаи по вертикали) */
+  justify-content: center;
+  /* Выравниваем по центру поперечной оси (в нашем случаи по горизонтали) */
+  align-items: flex-start;
+  /* Устанавливаем максимальную ширину как в макете */
+  max-width: 460px;
+}
+
+.title{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 44px;
+  color: var(--color-light-xl);
+}
+
+.p{
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-dark-s);
+}
+
+.hero__paragraph{
+  margin-bottom: 42px;
+  color: var(--color-dark-s);
+}
+
+.btn {
+  border-radius: 100px;
+  padding: 15px 45px;
+  width: 207px;
+  height: 52px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: var(--color-dark-3xl)
+}
+
+.hero__btn{
+
+  
+}
+
+.hero__img-wrap{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  max-width: 698px;
+}
+
+.hero__img{
+ 
+
+}
+
+
+
+.about {
+padding: 80px 0 100px;
+  
+}
+
+.about__content {
+  display: flex;
+}
+
+.section-title{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: var(--color-dark-l); 
+}
+
+.subtitle{
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-dark-xl);
+}
+
+.about__content{
+  display: flex;
+}
+.icon{
+  
+  text-align: center;
+
+}
+
+
+.friends{
+  background: var(--color-light-xl);
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: var(--color-dark-l);
+}
+
+.friends__title{
+  margin-bottom:60px ;
+  
+
+}
+
+.friends__slider{
+  position: relative;
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.slider__list{
+  display: flex;
+  max-width: 990px;
+  gap: 30px 90px;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow-x: hidden;
+ }
+
+.slider__item{
+  flex: 0 0 270px;
+}
+
+.slider__controls{
+  position: absolute;
+  top:50%;
+  left: 0;
+  width: 100%;
+}
+
+.slider__control{
+  display: block;
+  position: absolute;    
+  transform:translate(-50%) ;
+}
+
+.slider__control_right{
+  right: 0;
+}
+
+.slider__control_left{
+  left: 0;
+}
+
+.slider__control_right{
+  right: 0;
+}
+.help {
+
+}
+.section-title {
+  text-align: center;
+
+}
+.help__title {
+
+}
+.help__list {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1026px;
+  gap: 55px 120px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+
+}
+.help__item {
+
+}
+.help_name {
+
+}
+
+.foother {
+  background-image: url(../img/start-screen-gradient-background.png);
+}
+.foother__container {
+  display: flex;
+  gap: 65px 140px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+}
+.footer__col {
+  max-width: 300px;
+}
+.section-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  color: var(--color-light-xl);
+}
+.section-title_color_white {
+ 
+}
+.footer__info {
+}
+.footer__contact {
+}
+.info-element {
+}
+.email {
+}
+.info-element__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-primary);
+}
+.tel {
+}
+
+
+
+.container {
+  
+}
+.section__title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  color: var(--color-dark-l);
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.section__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-dark-l);
+  text-align: center;
+}
+.section__img-wrap {
+  text-align: center;
+}
+.img__donation-wrap {
+ 
+}
