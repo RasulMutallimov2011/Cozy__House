@@ -1,1 +1,1 @@
-ttps://rasulmutallimov2011.github.io/Cozy__House/
+https://rasulmutallimov2011.github.io/Cozy__House/
